@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>
+        starbucks website landing page</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+      <body>
+        <section>
+          <div class="circle"></div>
+          <header>
+            <a href="#" ><img src="logo32.jpeg" class="logo"></a>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">What's new </a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </header>
+          <div class="content">
+              <div class="textBox">
+                <h2>Plant a Seed,<br><span>Watch</span> It Grow</h2>
+                <p>A plant is a living organism belonging to the kingdom Plantae. It is a eukaryote that includes vascular plants, liverworts, hornworts, and mosses. Plants are characterized by their ability to undergo photosynthesis, producing their own food from sunlight, water, and carbon dioxide. They have cell walls made of cellulose, contain chloroplasts, and lack the power of locomotion.</p>
+                <a href="#">Learn more</a>
+              </div>
+                <div class="imgBox">
+                  <img src ="product3.png" class="starbucks">
+                </div>
+          </div>
+          <ul class="thumb">
+            <li><img src="product3.png" onclick="imgSlider('product3.png');changeCircleColor('#017143')"></li>
+            <li><img src="product4.png" onclick="imgSlider('product4.png');changeCircleColor('#800080')"></li>
+            <li><img src="product5.png" onclick="imgSlider('product5.png');changeCircleColor('#017145')"></li>
+          </ul>
+          <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png" ></a></li>
+            <li><a href="#"><img src="instagram.png" ></a></li>
+          </ul>
+        </section>
+        <script type="text/javascript">
+          function imgSlider(anything){
+          document.querySelector('.starbucks').src = anything;
+          }
+          function changeCircleColor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+          }
+          
+        </script>
+
+      </body>
+</html> 
